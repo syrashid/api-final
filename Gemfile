@@ -37,6 +37,9 @@ gem 'simple_form'
 # Add pundit and pair with devise to app
 gem 'pundit'
 
+# Add token authentication for token requests needing user authentication
+gem 'simple_token_authentication'
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
