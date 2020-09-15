@@ -34,10 +34,10 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
-# Add pundit and pair with devise to app
+# For Authorization
 gem 'pundit'
 
-# Add token authentication for token requests needing user authentication
+# For Authentication
 gem 'simple_token_authentication'
 
 group :development, :test do  gem 'pry-byebug'

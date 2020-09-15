@@ -43,10 +43,12 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
   end
 
   def destroy
-    name = @restaurant.name
     @restaurant.destroy
-    render json: { success: "#{name} was deleted"},
-    status: :ok
+    # This is standard convention to return no content when the destroy action was implemented successfully
+    head :no_content
+    # No need to create a `destroy.json.jbuilder` view
+    # Of if you really want to be tricky do something like
+    # render json: { message: "It worked! you deleted the restaurant" }
   end
 
   private
