@@ -1,3 +1,6 @@
+# Notice the namespacing for our controller, this namespacing convention is extremely important to follow
+# Remember we version because we anticipate change, to honor the contract we make with our users, and to keep version control
+# Remember all controllers related to the api will exist in this folder
 class Api::V1::BaseController < ActionController::API
   # Remember we need Pundit here to protect our API Endpoints
   include Pundit
